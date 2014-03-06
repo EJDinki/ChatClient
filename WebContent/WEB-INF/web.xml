@@ -9,4 +9,25 @@
     <welcome-file>default.htm</welcome-file>
     <welcome-file>default.jsp</welcome-file>
   </welcome-file-list>
+
+  <servlet>
+    <servlet-name>ChatServlet</servlet-name>
+    <servlet-class>chat.servlets.ChatServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>ChatServlet</servlet-name>
+    <url-pattern>/ChatServlet</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>defualtChat</servlet-name>
+    <jsp-file>/chat.jsp</jsp-file>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>defualtChat</servlet-name>
+    <url-pattern>/</url-pattern>
+  </servlet-mapping>
+
 </web-app>
